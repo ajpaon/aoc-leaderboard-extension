@@ -4,6 +4,11 @@
   "version": "0.1",
   "description": "Advent of Code Private Leaderboard Daily provides submission times for each participant for each problem.",
 
+  "icons": {
+    "128": "icons/icon128.png",
+    "48": "icons/icon48.png"
+  },
+
   "permissions": [
     "*://adventofcode.com/2020/leaderboard/private/view/*.json"
   ],
