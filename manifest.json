@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "AOCPLD",
+  "version": "0.1",
+  "description": "Advent of Code Private Leaderboard Daily provides submission times for each participant for each problem.",
+
+  "permissions": [
+    "*://adventofcode.com/2020/leaderboard/private/view/*.json"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://adventofcode.com/*/leaderboard/private/view/*"],
+      "js": ["aocpld.js"]
+    }
+  ]
+}
