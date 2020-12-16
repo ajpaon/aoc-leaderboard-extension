@@ -3,7 +3,7 @@ const match = /\/(\d+)\/leaderboard\/private\/view\/(\d+)/.exec(current_page);
 const year = match[1]
 const leaderboard_id = match[2];
 
-const request_url = `https://adventofcode.com/${year}/leaderboard/private/view/${leaderboard_id}.json`;
+const request_url = `https://adventofcode.com/${year}/leaderboard/private/view/${leaderboard_id}.json?via=ajpaon/aoc-leaderboard-extension`;
 
 const createRow = (place, ts, name) => {
   const row = document.createElement('div');
